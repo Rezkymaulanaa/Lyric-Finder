@@ -1,0 +1,77 @@
+<!-- song_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#101010">
+
+    <LinearLayout
+        android:id="@+id/btnLyrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/bg_selector">
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="12"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/songImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/songTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Song"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/songArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Artist"
+                android:textColor="#B8B8B8"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnFav"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_favorite_border_24"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B8B8B8"/>
+</LinearLayout>
